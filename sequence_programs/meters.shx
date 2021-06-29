@@ -1,0 +1,9 @@
+#!/bin/bash -x
+
+read -p "enter length ; " length
+read -p "enter breadth : " breadth
+area=$(($length*$breadth))
+echo $area
+meter=$(($area/10))
+echo $meter
+
