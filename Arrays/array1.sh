@@ -33,8 +33,8 @@ do
                 smin=$b
         fi
 done
-echo "Maximum number is : $max"
-echo "Minimum number is : $min"
+
+
 echo "Maximum second number is : $smax"
 echo "Minimum second number is : $smin"
 
