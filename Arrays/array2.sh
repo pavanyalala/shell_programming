@@ -1,29 +1,28 @@
 #!/bin/bash -x
 
 read -p  "Enter the Total no you want to enter : " a
-declare -a b
 for((i=0; $i<$a; i++))
 do
-		b[$i]=$((RANDOM%899+100))
+	b[$i]=$((RANDOM%899+100))
 
 done
 
 echo  "original array : ${b[@]}"
 
-for((i=0; $i<a-1; i++))
+for((i=0; $i<$a-1; i++))
 do
-		for((j=i+1; j<a; j++))
-		do
-				if((b[i]>b[j]))
-				then
-				temp=${b[i]}
-				b[$i]=${b[j]}
-				b[$j]=$temp
-				fi
-		done
+	for((j=$i+1; $j<$a; j++))
+	do
+		if((b[$i]>b[$j]))
+		then
+			temp=${b[i]}
+			b[$i]=${b[j]}
+			b[$j]=$temp
+		fi
+	done
 done
 
-for((i=0; i<=0; i++))
+for((i=0; $i<=0; i++))
 do
 echo "Sorted Array : ${b[@]} "
 done

@@ -1,9 +1,8 @@
-l
 #!/bin/bash -x
 
 read -p " Enter number to print its factors " a
 echo " Factors of $a : "
-for(( i=2; i<=$a; i++))
+for(( i=2; $i<=$a; i++))
 do
 	if(($a%i==0))
 	then

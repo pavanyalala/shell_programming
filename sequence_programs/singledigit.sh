@@ -1,3 +1,3 @@
 #!/bin/bash -x
- randomNUM=$((RANDOM%10))
+ randomNum=$((RANDOM%10))
  echo $randomNum

@@ -11,4 +11,7 @@ l=$(((a*b)+c))
 if [ $i -gt $j -a $i -gt $k -a $i -gt $l ]
 then
 	echo $i is maximum number
-
+elif [ $i -lt $j -a $i -lt $k -a $i -lt $l ]
+then
+	echo $i is minimum number
+fi

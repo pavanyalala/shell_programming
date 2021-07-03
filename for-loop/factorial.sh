@@ -6,7 +6,7 @@ echo " factorial value of $a : "
 
 fact=1
 
-for(( i=2; i<=$a; i++ ))
+for(( i=2; $i<=$a; i++ ))
 do
 	fact=$(( fact * i ))
 done
